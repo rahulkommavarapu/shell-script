@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Rahim:: Hi Robert"
-echo "Robert:: Hello Rahim"
-echo "Rahim:: How are you doing?"
-echo "Robert:: I am good. how are you?"
+echo "Rahim:: Hi Rahul"
+echo "Rahul:: Hello Rahim"
+echo "Rahim:: what are you doing?"
+echo "Rahul:: I am good. how are you?"
