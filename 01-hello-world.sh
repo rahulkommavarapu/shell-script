@@ -6,6 +6,6 @@ echo "Hello World!"
 
 echo "Hello Iam Rahul"
 
-echo "Hello Ajay How are you dear re you fine "
+echo "Hello Ajay How are you dear are you fine "
 
 
