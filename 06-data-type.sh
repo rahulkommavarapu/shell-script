@@ -2,10 +2,12 @@
 
 NUMBER1=$1
 NUMBER2=$2
-TIMESTAMP=$((date))
+NUMBER3=$3
+TIMEDATE=$(date)
 
-echo "script executed at = $TIMESTAMP"
+echo "Executed at ($TIMEDATE)"
 
-SUM=$(($NUMBER1+$NUMBER2))
+SUM=$(($NUMBER1*$NUMBER2*$NUMBER3))
 
-echo="sum of $NUMBER1 & $NUMBER2 is ; $SUM"
+echo "sum of Numbers $NUMBER1,$NUMBER2 & $NUMBER3 is : ($SUM) "
+
