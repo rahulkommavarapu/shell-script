@@ -1,13 +1,10 @@
 #!/bin/bash
 
+Church=("L.E.F" "CFC" "AGM" "ANM")
 
-NAME=("Benny" "Joel" "Emi")
+echo " first church :${Church[0]}"
+echo " secound church :${Church[1]}"
+echo " third church :${Church[2]}"
+echo " fourth church :${Church[3]}"
 
-
-echo "First Name : ${NAME[0]}"
-
-echo "Secound Name : ${NAME[1]}"
-
-echo "Third Name : ${NAME[2]}"
-
-echo "For all : ${NAME[@]}"
+echo " for all  :${Church[@]}"
