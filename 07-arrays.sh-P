@@ -1,9 +1,13 @@
 #!/bin/bash
 
-MOVIES=("pushpa" "rrr" "devar")
 
-echo "First movie: ${MOVIES[0]}"
-echo "Second movie: ${MOVIES[1]}"
-echo "Third movie: ${MOVIES[2]}"
+NAME=("Benny" "Joel" "Emi")
 
-echo "ALL Movies are : ${MOVIES[@]}"
+
+echo "First Name : ${NAME[0]}"
+
+echo "Secound Name : ${NAME[1]}"
+
+echo "Third Name : ${NAME[2]}"
+
+echo "For all : ${NAME[@]}"

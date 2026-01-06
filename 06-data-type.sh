@@ -7,7 +7,7 @@ TIMEDATE=$(date)
 
 echo "Executed at ($TIMEDATE)"
 
-SUM=$(($NUMBER1*$NUMBER2*$NUMBER3))
+SUM=$(($NUMBER1/$NUMBER2-$NUMBER3))
 
 echo "sum of Numbers $NUMBER1,$NUMBER2 & $NUMBER3 is : ($SUM) "
 
