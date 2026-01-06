@@ -1,9 +1,11 @@
 #!/bin/bash
 
-PERSON1=Raghu
-PERSON2=Rajesh
+PERSON1=Rahul
+PERSON2=Ramesh
+PERSON3=Raghu
 
-echo "$PERSON1:: Hi $PERSON2"
-echo "$PERSON2:: Hello $PERSON1"
-echo "$PERSON1:: How are you doing?"
-echo "$PERSON2:: I am good. how are you?"
+
+echo "$PERSON1::Hi $PERSON2"
+echo "$PERSON2::Hello $PERSON1!,How are you?"
+echo "$PERSON2::Hello $PERSON3,How are you Dear...!"
+echo "$PERSON3::iam fine $PERSON1,$PERSON2 What are you doing both of you Dears"
