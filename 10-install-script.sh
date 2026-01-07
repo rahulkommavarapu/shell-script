@@ -26,5 +26,14 @@ then
     exit 1
 else 
    echo "Installing git Success "
-fi   
+fi
 
+dnf install mysql-server -y
+
+if [ $? -ne 0 ]
+  then
+ echo "Installing the Mysql-server Failure"
+ exit 1
+else
+  echo "Installing the Mysql-Server Success"
+fi
