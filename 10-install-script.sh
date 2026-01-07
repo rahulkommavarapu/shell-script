@@ -9,6 +9,7 @@ fi
 
 dnf install mysql -y
 
+dnf uninstall git -y
 
 
 
