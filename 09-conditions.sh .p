@@ -1,10 +1,12 @@
 #!/bin/bash
 
- NUMBER=$1
+NUMBER=$1
+# Print the number is greater then 100 or not?
+if [ $NUMBER  -ge 100 ]
+ then
+      echo "Print the number is greater then 100 Print Yes "
+else
+      echo "Print the number is less then 100 print no"
+fi
 
- if [ $NUMBER -gt 100 ] 
-then
-    echo "Given number is greater then 100"
- else
-     echo "Given number is  less then or equal to 100"
- fi
+
