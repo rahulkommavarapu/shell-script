@@ -1,6 +1,6 @@
 #1/bin/bash
 
-USERID=$(id -u)
+USERID=$(id -u)  #for sudo access
 
 if [ $USERID -ne 0 ]
   then
