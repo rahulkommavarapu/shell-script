@@ -1,12 +1,18 @@
 #!/bin/bash
 
-NUMBER=$1
-# Print the number is greater then 100 or not?
-if [ $NUMBER  -ge 100 ]
- then
-      echo "Print the number is greater then 100 Print Yes "
+NUMBER1=$1
+NUMBER2=$2
+
+#Print the Sum of Two Numbers 
+ SUM=$(($NUMBER1 + $NUMBER2))
+
+if [ $SUM ]
+then
+   echo "Print the two numbers ,$SUM "
 else
-      echo "Print the number is less then 100 print no"
+   echo "No Not Print" 
 fi
+
+
 
 
