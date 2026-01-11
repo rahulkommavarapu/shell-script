@@ -23,7 +23,7 @@ VALIDATE(){
 
     echo "Script started executing at :$TIMESTAMP " &>>$LOG_FILE_NAME
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
   echo "ERROR :: u must have sudo sccess to executr this script"
   exit 1
