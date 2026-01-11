@@ -1,40 +1,43 @@
 #!/bin/bash
 
+#Install the packages with user arguments 
+
 USERID=$(id -u)
 
 VALIDATE(){
     if [ $1 -ne 0 ]
-    then
-        echo "$2 ... FAILURE"
+     then
+        echo "$2 for Install package is Failure"
         exit 1
-    else
-        echo "$2 ... SUCCESS"
+    else 
+       echo "$2 for Install Package is Success"
+
     fi
 }
 
-if [ $USERID -ne 0 ]
-then
-    echo "ERROR:: You must have sudo access to execute this script"
-    exit 1 #other than 0
-fi
+     if [ $USERID -ne 0 ]
+       then
+        echo  "ERROR :: you must have sudo access to execute this script"
+        exit 1
+    fi
 
-dnf list installed mysql
+    dnf installed mysql -y
 
-if [ $? -ne 0 ]
-then # not installed
-    dnf install mysql -y
-    VALIDATE $? "Installing MySQL"
-else
-    echo "MySQL is already ... INSTALLED"
-fi
+    if [ $? -ne 0 ]
+       then
+        dnf install mysql -y
+        VALIDATE  $? "Installing Mysql"
+    else 
+       echo "already Installing Mysql"
+    fi   
 
+    dnf installed git  -y
 
-dnf list installed git
+    if [ $? -ne 0 ]
+       then
+        dnf install git  -y
+         VALIDATE  $? "Installing Git"
+    else 
+       echo "already Installing Git"
+    fi   
 
-if [ $? -ne 0 ]
-then
-    dnf install git -y
-    VALIDATE $? "Installing Git"
-else
-    echo "Git is already ... INSTALLED"
-fi

@@ -4,16 +4,15 @@
 NUMBER1=$1
 NUMBER2=$2
 
+
 SUM=$(($NUMBER1+$NUMBER2))
 
-if [ $SUM -ge 150 ]
- then
-  echo "Print  Yes"
+if [ $SUM -ge 100 ]
+then
+  echo "if Condition Okay Print  Yes"
 else
-  echo "Otherwise Print NO"
-fi 
-
-
+  echo "Condition NOT okay Print No"
+fi  
 
 
 
