@@ -4,5 +4,5 @@
 
 for i in 0..5
  do 
-     echo "#Number $!"
+     echo "#Number $i"
  done
