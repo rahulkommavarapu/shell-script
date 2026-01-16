@@ -57,7 +57,7 @@ then
             rm -rf $filepath
             echo "Deleted file: $filepath"
         done <<< $FILES
-    else
+    else 
         echo -e "$R Error:: $N Failed to create ZIP file "
         exit 1
     fi

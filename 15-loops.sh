@@ -38,7 +38,7 @@ for package in $@
         dnf install $package -y 
         VALIDATE $? "Installing $package" &>>$LOG_FILE_NAME
     else
-     echo  -e "$package is already $y ........Installed $N"
+     echo  -e "$package is already $y ........Installed $G"
     fi
 
 done         
